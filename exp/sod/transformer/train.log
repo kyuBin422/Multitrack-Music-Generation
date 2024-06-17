@@ -1,0 +1,41 @@
+Running command: python mmt+/train.py -m transformer -d sod -o exp/sod/transformer -g 0
+Using arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'comment_path': 'md5_to_attribute.pickle',
+ 'dataset': 'sod',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': PosixPath('data/sod/processed/notes'),
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'model': 'transformer',
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/sod/transformer'),
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'tokenizer_path': 'tokenizer.model',
+ 'train_names': PosixPath('data/sod/processed/train-names.txt'),
+ 'update_policy': 'task',
+ 'use_csv': False,
+ 'valid_names': PosixPath('data/sod/processed/valid-names.txt'),
+ 'valid_steps': 1000}
+Saved arguments to /hpctmp/e0787977/mmt/exp/sod/transformer/train-args.json
+Using device: cuda:0
+Creating the data loader...
+Creating model...
+Number of parameters: 20013625
+Number of trainable parameters: 20013625
+Training...

@@ -1,0 +1,61 @@
+Running command: python mmt/evaluate.py -d lmd_full -o exp/lmd_full -g 0 -ns 10
+Using arguments:
+{'dataset': 'lmd_full',
+ 'filter': 'top_k',
+ 'filter_threshold': 0.9,
+ 'gpu': 0,
+ 'in_dir': PosixPath('data/lmd_full/processed/notes'),
+ 'jobs': 0,
+ 'model_steps': None,
+ 'n_samples': 10,
+ 'names': PosixPath('data/lmd_full/processed/test-names.txt'),
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/lmd_full'),
+ 'quiet': False,
+ 'seq_len': 1024,
+ 'temperature': 1.0,
+ 'use_csv': False}
+Saved arguments to /hpctmp/e0787977/mmt/exp/lmd_full/evaluate-args.json
+Loading training arguments from: /hpctmp/e0787977/mmt/exp/lmd_full/train-args.json
+Using loaded arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'dataset': 'lmd_full',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': 'data/lmd_full/processed/notes',
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'out_dir': '/hpctmp/e0787977/mmt/exp/lmd_full',
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'train_names': 'data/lmd_full/processed/train-names.txt',
+ 'use_csv': False,
+ 'valid_names': 'data/lmd_full/processed/valid-names.txt',
+ 'valid_steps': 1000}
+Using device: cuda:0
+Creating the data loader...
+Creating the model...
+Loaded the model weights from: /hpctmp/e0787977/mmt/exp/lmd_full/checkpoints/best_model.pt
+Reloaded SentencePiece model from tokenizer.model
+#words: 32000 - BOS ID: 1 - EOS ID: 2
+truth
+pitch_class_entropy: mean=2.7463, steddev=0.3011
+scale_consistency: mean=0.9597, steddev=0.0411
+groove_consistency: mean=0.9397, steddev=0.0327
+unconditioned
+pitch_class_entropy: mean=2.0894, steddev=0.5236
+scale_consistency: mean=0.9823, steddev=0.0275
+groove_consistency: mean=0.9465, steddev=0.0170

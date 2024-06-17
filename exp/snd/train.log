@@ -1,0 +1,39 @@
+Running command: python mmt/train.py -d snd -o exp/snd -g 0
+Using arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'dataset': 'snd',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': PosixPath('data/snd/processed/notes'),
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/snd'),
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'train_names': PosixPath('data/snd/processed/train-names.txt'),
+ 'use_csv': False,
+ 'valid_names': PosixPath('data/snd/processed/valid-names.txt'),
+ 'valid_steps': 1000}
+Saved arguments to /hpctmp/e0787977/mmt/exp/snd/train-args.json
+Using device: cuda:0
+Creating the data loader...
+Creating model...
+Number of parameters: 36379175
+Number of trainable parameters: 19995175
+Reloaded SentencePiece model from tokenizer.model
+#words: 32000 - BOS ID: 1 - EOS ID: 2
+Training...

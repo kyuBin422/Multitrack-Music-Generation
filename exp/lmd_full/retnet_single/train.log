@@ -1,0 +1,71 @@
+Running command: python mmt+/train.py -d lmd_full -m retnet -o exp/lmd_full/retnet_single -g 0 --update_policy single
+Using arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'comment_path': 'md5_to_attribute.pickle',
+ 'dataset': 'lmd_full',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': PosixPath('data/lmd_full/processed/notes'),
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'model': 'retnet',
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/lmd_full/retnet_single'),
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'tokenizer_path': 'tokenizer.model',
+ 'train_names': PosixPath('data/lmd_full/processed/train-names.txt'),
+ 'update_policy': 'single',
+ 'use_csv': False,
+ 'valid_names': PosixPath('data/lmd_full/processed/valid-names.txt'),
+ 'valid_steps': 1000}
+Saved arguments to /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/train-args.json
+Using device: cuda:0
+Creating the data loader...
+Creating model...
+Number of parameters: 28115456
+Number of trainable parameters: 28115456
+Training...
+Validating...
+Validation loss: 6.9427
+Individual losses: type=0.0005, beat: 0.0553, position: 0.1263, pitch: 0.4010, duration: 0.2795, instrument: 0.1943timesignaturenumerator: 0.0031timesignaturedenominator: 0.0012tempo: 0.0039velocity: 0.0919
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/checkpoints/model_1000.pt
+Training...
+Validating...
+Validation loss: 6.0842
+Individual losses: type=0.0003, beat: 0.0461, position: 0.1104, pitch: 0.3450, duration: 0.2615, instrument: 0.1596timesignaturenumerator: 0.0039timesignaturedenominator: 0.0009tempo: 0.0015velocity: 0.0849
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/checkpoints/model_2000.pt
+Training...
+Validating...
+Validation loss: 5.5427
+Individual losses: type=0.0003, beat: 0.0401, position: 0.0975, pitch: 0.3156, duration: 0.2457, instrument: 0.1402timesignaturenumerator: 0.0020timesignaturedenominator: 0.0006tempo: 0.0013velocity: 0.0805
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/checkpoints/model_3000.pt
+Training...
+Validating...
+Validation loss: 5.1091
+Individual losses: type=0.0002, beat: 0.0358, position: 0.0877, pitch: 0.2907, duration: 0.2335, instrument: 0.1231timesignaturenumerator: 0.0016timesignaturedenominator: 0.0005tempo: 0.0011velocity: 0.0773
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/checkpoints/model_4000.pt
+Training...
+Validating...
+Validation loss: 4.8556
+Individual losses: type=0.0002, beat: 0.0329, position: 0.0826, pitch: 0.2778, duration: 0.2252, instrument: 0.1137timesignaturenumerator: 0.0015timesignaturedenominator: 0.0005tempo: 0.0012velocity: 0.0737
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/checkpoints/model_5000.pt
+Training...
+Validating...
+Validation loss: 4.6446
+Individual losses: type=0.0002, beat: 0.0306, position: 0.0785, pitch: 0.2671, duration: 0.2195, instrument: 0.1028timesignaturenumerator: 0.0014timesignaturedenominator: 0.0004tempo: 0.0010velocity: 0.0725
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/retnet_single/checkpoints/model_6000.pt
+Training...

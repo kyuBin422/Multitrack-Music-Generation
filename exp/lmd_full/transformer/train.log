@@ -1,0 +1,154 @@
+Running command: python mmt+/train.py -m transformer -d lmd_full -o exp/lmd_full/transformer -g 0
+Using arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'comment_path': 'md5_to_attribute.pickle',
+ 'dataset': 'lmd_full',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': PosixPath('data/lmd_full/processed/notes'),
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'model': 'transformer',
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/lmd_full/transformer'),
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'tokenizer_path': 'tokenizer.model',
+ 'train_names': PosixPath('data/lmd_full/processed/train-names.txt'),
+ 'update_policy': 'task',
+ 'use_csv': False,
+ 'valid_names': PosixPath('data/lmd_full/processed/valid-names.txt'),
+ 'valid_steps': 1000}
+Saved arguments to /hpctmp/e0787977/mmt/exp/lmd_full/transformer/train-args.json
+Using device: cuda:0
+Creating the data loader...
+Creating model...
+Number of parameters: 20013625
+Number of trainable parameters: 20013625
+Training...
+Validating...
+Validation loss: 11.9724
+Individual losses: type=0.0013, beat: 0.3053, position: 0.1966, pitch: 0.5547, duration: 0.3634, instrument: 0.3895timesignaturenumerator: 0.0349timesignaturedenominator: 0.0096tempo: 0.0233velocity: 0.1168
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_1000.pt
+Training...
+Validating...
+Validation loss: 16.8109
+Individual losses: type=0.0020, beat: 0.7136, position: 0.2434, pitch: 0.5861, duration: 0.4088, instrument: 0.4460timesignaturenumerator: 0.0636timesignaturedenominator: 0.0224tempo: 0.1653velocity: 0.1506
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_2000.pt
+Training...
+Validating...
+Validation loss: 15.8501
+Individual losses: type=0.0013, beat: 0.6640, position: 0.2536, pitch: 0.6235, duration: 0.4122, instrument: 0.4460timesignaturenumerator: 0.0532timesignaturedenominator: 0.0163tempo: 0.0142velocity: 0.1572
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_3000.pt
+Training...
+Validating...
+Validation loss: 15.5311
+Individual losses: type=0.0013, beat: 0.6788, position: 0.2423, pitch: 0.5933, duration: 0.4041, instrument: 0.4405timesignaturenumerator: 0.0511timesignaturedenominator: 0.0159tempo: 0.0112velocity: 0.1500
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_4000.pt
+Training...
+Validating...
+Validation loss: 14.8674
+Individual losses: type=0.0013, beat: 0.6411, position: 0.2317, pitch: 0.5789, duration: 0.4057, instrument: 0.4204timesignaturenumerator: 0.0396timesignaturedenominator: 0.0126tempo: 0.0074velocity: 0.1392
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_5000.pt
+Training...
+Validating...
+Validation loss: 18.1796
+Individual losses: type=0.0029, beat: 0.6995, position: 0.2771, pitch: 0.7149, duration: 0.4744, instrument: 0.5261timesignaturenumerator: 0.0616timesignaturedenominator: 0.0100tempo: 0.0149velocity: 0.2486
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_6000.pt
+Training...
+Validating...
+Validation loss: 14.7391
+Individual losses: type=0.0012, beat: 0.6331, position: 0.2311, pitch: 0.5796, duration: 0.3995, instrument: 0.4231timesignaturenumerator: 0.0414timesignaturedenominator: 0.0082tempo: 0.0065velocity: 0.1329
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_7000.pt
+Training...
+Validating...
+Validation loss: 14.6088
+Individual losses: type=0.0012, beat: 0.6356, position: 0.2314, pitch: 0.5832, duration: 0.3932, instrument: 0.4154timesignaturenumerator: 0.0315timesignaturedenominator: 0.0073tempo: 0.0093velocity: 0.1267
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_8000.pt
+Training...
+Validating...
+Validation loss: 14.8944
+Individual losses: type=0.0012, beat: 0.6502, position: 0.2314, pitch: 0.5885, duration: 0.3997, instrument: 0.4196timesignaturenumerator: 0.0384timesignaturedenominator: 0.0079tempo: 0.0115velocity: 0.1339
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_9000.pt
+Training...
+Validating...
+Validation loss: 14.6058
+Individual losses: type=0.0015, beat: 0.6336, position: 0.2244, pitch: 0.5808, duration: 0.4025, instrument: 0.4166timesignaturenumerator: 0.0332timesignaturedenominator: 0.0080tempo: 0.0081velocity: 0.1255
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_10000.pt
+Training...
+Validating...
+Validation loss: 14.5030
+Individual losses: type=0.0012, beat: 0.6227, position: 0.2202, pitch: 0.5920, duration: 0.3907, instrument: 0.4100timesignaturenumerator: 0.0348timesignaturedenominator: 0.0106tempo: 0.0088velocity: 0.1262
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_11000.pt
+Training...
+Validating...
+Validation loss: 14.9632
+Individual losses: type=0.0012, beat: 0.6287, position: 0.2377, pitch: 0.5828, duration: 0.4516, instrument: 0.4159timesignaturenumerator: 0.0344timesignaturedenominator: 0.0060tempo: 0.0106velocity: 0.1250
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_12000.pt
+Training...
+Validating...
+Validation loss: 14.2271
+Individual losses: type=0.0012, beat: 0.6046, position: 0.2205, pitch: 0.5840, duration: 0.3845, instrument: 0.4018timesignaturenumerator: 0.0276timesignaturedenominator: 0.0063tempo: 0.0111velocity: 0.1296
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_13000.pt
+Training...
+Validating...
+Validation loss: 13.9893
+Individual losses: type=0.0012, beat: 0.5868, position: 0.2172, pitch: 0.5825, duration: 0.3855, instrument: 0.3980timesignaturenumerator: 0.0272timesignaturedenominator: 0.0055tempo: 0.0065velocity: 0.1211
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_14000.pt
+Training...
+Validating...
+Validation loss: 13.9852
+Individual losses: type=0.0012, beat: 0.5862, position: 0.2178, pitch: 0.5775, duration: 0.3838, instrument: 0.4018timesignaturenumerator: 0.0265timesignaturedenominator: 0.0050tempo: 0.0069velocity: 0.1242
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_15000.pt
+Training...
+Validating...
+Validation loss: 14.1953
+Individual losses: type=0.0013, beat: 0.6075, position: 0.2161, pitch: 0.5838, duration: 0.3925, instrument: 0.3995timesignaturenumerator: 0.0295timesignaturedenominator: 0.0068tempo: 0.0048velocity: 0.1241
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_16000.pt
+Training...
+Validating...
+Validation loss: 14.1141
+Individual losses: type=0.0014, beat: 0.5944, position: 0.2219, pitch: 0.5787, duration: 0.3964, instrument: 0.3953timesignaturenumerator: 0.0295timesignaturedenominator: 0.0051tempo: 0.0047velocity: 0.1250
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_17000.pt
+Training...
+Validating...
+Validation loss: 13.9953
+Individual losses: type=0.0012, beat: 0.5802, position: 0.2171, pitch: 0.5755, duration: 0.3859, instrument: 0.3993timesignaturenumerator: 0.0285timesignaturedenominator: 0.0069tempo: 0.0144velocity: 0.1237
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_18000.pt
+Training...
+Validating...
+Validation loss: 14.1716
+Individual losses: type=0.0013, beat: 0.6007, position: 0.2195, pitch: 0.5800, duration: 0.3884, instrument: 0.4041timesignaturenumerator: 0.0349timesignaturedenominator: 0.0066tempo: 0.0042velocity: 0.1221
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_19000.pt
+Training...
+Validating...
+Validation loss: 13.8367
+Individual losses: type=0.0012, beat: 0.5857, position: 0.2129, pitch: 0.5732, duration: 0.3809, instrument: 0.3940timesignaturenumerator: 0.0293timesignaturedenominator: 0.0052tempo: 0.0050velocity: 0.1187
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_20000.pt
+Training...
+Validating...
+Validation loss: 13.9969
+Individual losses: type=0.0012, beat: 0.5992, position: 0.2135, pitch: 0.5740, duration: 0.3841, instrument: 0.4009timesignaturenumerator: 0.0271timesignaturedenominator: 0.0051tempo: 0.0052velocity: 0.1225
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_21000.pt
+Training...
+Validating...
+Validation loss: 14.1111
+Individual losses: type=0.0012, beat: 0.6359, position: 0.2141, pitch: 0.5746, duration: 0.3846, instrument: 0.3884timesignaturenumerator: 0.0237timesignaturedenominator: 0.0053tempo: 0.0052velocity: 0.1187
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/model_22000.pt
+Stopped the training for no improvements in 20 rounds.
+Minimum validation loss achieved: 11.972360432896638
+Saved the optimizer state to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/optimizer_22000.pt
+Saved the scheduler state to: /hpctmp/e0787977/mmt/exp/lmd_full/transformer/checkpoints/scheduler_22000.pt

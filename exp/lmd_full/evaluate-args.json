@@ -1,0 +1,1 @@
+{"dataset": "lmd_full", "names": "data/lmd_full/processed/test-names.txt", "in_dir": "data/lmd_full/processed/notes", "out_dir": "/hpctmp/e0787977/mmt/exp/lmd_full", "n_samples": 10, "use_csv": false, "model_steps": null, "seq_len": 1024, "temperature": 1.0, "filter": "top_k", "filter_threshold": 0.9, "gpu": 0, "jobs": 0, "quiet": false}

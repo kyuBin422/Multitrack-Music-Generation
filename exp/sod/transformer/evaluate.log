@@ -1,0 +1,59 @@
+Running command: python C:\Users\Bin  Yu\OneDrive - National University of Singapore\Desktop\tomAto\mmt\mmt+\evaluate.py --model transformer -d sod -o exp/sod/transformer -g 0 -ns 10
+Using arguments:
+{'comment_path': 'md5_to_attribute.pickle',
+ 'dataset': 'sod',
+ 'filter': 'top_k',
+ 'filter_threshold': 0.9,
+ 'gpu': 0,
+ 'in_dir': WindowsPath('data/sod/processed/notes'),
+ 'jobs': 0,
+ 'model': 'transformer',
+ 'model_steps': None,
+ 'n_samples': 10,
+ 'names': WindowsPath('data/sod/processed/test-names.txt'),
+ 'out_dir': WindowsPath('C:/Users/Bin  Yu/OneDrive - National University of Singapore/Desktop/tomAto/mmt/exp/sod/transformer'),
+ 'quiet': False,
+ 'seq_len': 1024,
+ 'temperature': 1.0,
+ 'tokenizer_path': 'tokenizer.model',
+ 'use_csv': False}
+Saved arguments to C:\Users\Bin  Yu\OneDrive - National University of Singapore\Desktop\tomAto\mmt\exp\sod\transformer\evaluate-args.json
+Loading training arguments from: C:\Users\Bin  Yu\OneDrive - National University of Singapore\Desktop\tomAto\mmt\exp\sod\transformer\train-args.json
+Using loaded arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'comment_path': 'md5_to_attribute.pickle',
+ 'dataset': 'sod',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': 'data\\sod\\processed\\notes',
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'model': 'transformer',
+ 'out_dir': 'C:\\Users\\Bin  Yu\\OneDrive - National University of '
+            'Singapore\\Desktop\\tomAto\\mmt\\exp\\sod\\transformer',
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'tokenizer_path': 'tokenizer.model',
+ 'train_names': 'data\\sod\\processed\\train-names.txt',
+ 'update_policy': 'task',
+ 'use_csv': False,
+ 'valid_names': 'data\\sod\\processed\\valid-names.txt',
+ 'valid_steps': 1000}
+Using device: cuda:0
+Creating the data loader...
+Creating the model...
+Loaded the model weights from: C:\Users\Bin  Yu\OneDrive - National University of Singapore\Desktop\tomAto\mmt\exp\sod\transformer\checkpoints\best_model.pt

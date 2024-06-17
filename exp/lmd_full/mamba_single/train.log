@@ -1,0 +1,67 @@
+Running command: python mmt+/train.py -d lmd_full -m mamba -o exp/lmd_full/mamba_single -g 0 --update_policy single
+Using arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'comment_path': 'md5_to_attribute.pickle',
+ 'dataset': 'lmd_full',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': PosixPath('data/lmd_full/processed/notes'),
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'model': 'mamba',
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/lmd_full/mamba_single'),
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'tokenizer_path': 'tokenizer.model',
+ 'train_names': PosixPath('data/lmd_full/processed/train-names.txt'),
+ 'update_policy': 'single',
+ 'use_csv': False,
+ 'valid_names': PosixPath('data/lmd_full/processed/valid-names.txt'),
+ 'valid_steps': 1000}
+Saved arguments to /hpctmp/e0787977/mmt/exp/lmd_full/mamba_single/train-args.json
+Using device: cuda:0
+Creating the data loader...
+Creating model...
+Number of parameters: 11546938
+Number of trainable parameters: 11546938
+Training...
+Validating...
+Validation loss: 7.1584
+Individual losses: type=0.0013, beat: 0.0548, position: 0.1283, pitch: 0.4091, duration: 0.2861, instrument: 0.2091timesignaturenumerator: 0.0040timesignaturedenominator: 0.0026tempo: 0.0031velocity: 0.0946
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/mamba_single/checkpoints/model_1000.pt
+Training...
+Validating...
+Validation loss: 6.1034
+Individual losses: type=0.0012, beat: 0.0433, position: 0.1072, pitch: 0.3460, duration: 0.2592, instrument: 0.1659timesignaturenumerator: 0.0037timesignaturedenominator: 0.0022tempo: 0.0027velocity: 0.0858
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/mamba_single/checkpoints/model_2000.pt
+Training...
+Validating...
+Validation loss: 5.3818
+Individual losses: type=0.0010, beat: 0.0357, position: 0.0914, pitch: 0.3065, duration: 0.2408, instrument: 0.1360timesignaturenumerator: 0.0024timesignaturedenominator: 0.0013tempo: 0.0022velocity: 0.0798
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/mamba_single/checkpoints/model_3000.pt
+Training...
+Validating...
+Validation loss: 4.9313
+Individual losses: type=0.0010, beat: 0.0318, position: 0.0831, pitch: 0.2824, duration: 0.2271, instrument: 0.1152timesignaturenumerator: 0.0021timesignaturedenominator: 0.0012tempo: 0.0024velocity: 0.0757
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/mamba_single/checkpoints/model_4000.pt
+Training...
+Validating...
+Validation loss: 4.6469
+Individual losses: type=0.0010, beat: 0.0290, position: 0.0768, pitch: 0.2650, duration: 0.2193, instrument: 0.1060timesignaturenumerator: 0.0022timesignaturedenominator: 0.0012tempo: 0.0018velocity: 0.0722
+Saved the model to: /hpctmp/e0787977/mmt/exp/lmd_full/mamba_single/checkpoints/model_5000.pt
+Training...
+Validating...

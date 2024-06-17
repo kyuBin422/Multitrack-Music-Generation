@@ -1,0 +1,61 @@
+Running command: python mmt/evaluate.py -d sod -o exp/sod -g 0 -ns 100
+Using arguments:
+{'dataset': 'sod',
+ 'filter': 'top_k',
+ 'filter_threshold': 0.9,
+ 'gpu': 0,
+ 'in_dir': PosixPath('data/sod/processed/notes'),
+ 'jobs': 0,
+ 'model_steps': None,
+ 'n_samples': 100,
+ 'names': PosixPath('data/sod/processed/test-names.txt'),
+ 'out_dir': PosixPath('/hpctmp/e0787977/mmt/exp/sod'),
+ 'quiet': False,
+ 'seq_len': 1024,
+ 'temperature': 1.0,
+ 'use_csv': False}
+Saved arguments to /hpctmp/e0787977/mmt/exp/sod/evaluate-args.json
+Loading training arguments from: /hpctmp/e0787977/mmt/exp/sod/train-args.json
+Using loaded arguments:
+{'abs_pos_emb': True,
+ 'aug': True,
+ 'batch_size': 8,
+ 'dataset': 'sod',
+ 'dim': 512,
+ 'dropout': 0.2,
+ 'early_stopping': True,
+ 'early_stopping_tolerance': 20,
+ 'gpu': 0,
+ 'grad_norm_clip': 1.0,
+ 'heads': 8,
+ 'in_dir': 'data/sod/processed/notes',
+ 'jobs': 4,
+ 'layers': 6,
+ 'learning_rate': 0.0005,
+ 'lr_decay_multiplier': 0.1,
+ 'lr_decay_steps': 100000,
+ 'lr_warmup_steps': 5000,
+ 'max_beat': 256,
+ 'max_seq_len': 1024,
+ 'out_dir': '/hpctmp/e0787977/mmt/exp/sod',
+ 'quiet': False,
+ 'rel_pos_emb': False,
+ 'steps': 200000,
+ 'train_names': 'data/sod/processed/train-names.txt',
+ 'use_csv': False,
+ 'valid_names': 'data/sod/processed/valid-names.txt',
+ 'valid_steps': 1000}
+Using device: cuda:0
+Creating the data loader...
+Creating the model...
+Loaded the model weights from: /hpctmp/e0787977/mmt/exp/sod/checkpoints/best_model.pt
+Reloaded SentencePiece model from tokenizer.model
+#words: 32000 - BOS ID: 1 - EOS ID: 2
+truth
+pitch_class_entropy: mean=2.8405, steddev=0.2148
+scale_consistency: mean=0.9515, steddev=0.0493
+groove_consistency: mean=0.9344, steddev=0.0467
+unconditioned
+pitch_class_entropy: mean=2.7640, steddev=0.3779
+scale_consistency: mean=0.9481, steddev=0.0545
+groove_consistency: mean=0.9335, steddev=0.0337
